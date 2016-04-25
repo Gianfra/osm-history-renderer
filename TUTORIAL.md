@@ -80,10 +80,10 @@ next we'll create a splitter-config-file. Create a file named "splitter.config" 
 
     karlsruhe.osh.pbf BBOX 8.3122,48.9731,8.5139,49.0744
 
-make sure to use .osh as primary file extension, as a .osm won't contain the visible-information.
+make sure to use .osh as primary file extension, as a .osm won't contain the visible-information. You therefore need to rename the history-latest.osm.pbf into history-latest.osh.pbf.
 Now you're ready to run the splitter:
 
-    osm-history-splitter --softcut history-latest.osm.pbf splitter.config
+    osm-history-splitter --softcut history-latest.osh.pbf splitter.config
 
 it will run for several minutes and create the karlsruhe-extract for you.
 
